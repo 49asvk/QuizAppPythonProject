@@ -1,3 +1,6 @@
+# Importing needed libraries for this app.
+
+# tkinter for GUI implementation
 import tkinter as tk
 from tkinter import messagebox, simpledialog
 import random
@@ -72,6 +75,9 @@ class QuizApp:
 
         self.leaderboard_button = tk.Button(self.root, text="View Leaderboard", command=self.view_leaderboard, font=("Arial", 14))
         self.leaderboard_button.pack(pady=10)
+
+        self.quit_button = tk.Button(self.root, text="Quit", command=self.root.quit, font=("Arial", 14))
+        self.quit_button.pack(pady=10)
 
     def clear_screen(self):
         """Clears the current widgets from the screen."""
