@@ -4,6 +4,9 @@ import random
 import psycopg2
 
 # Connect to PostgreSQL database
+
+# Make sure to change the dbname, username, and password with the one you have.
+# I have used my Postgres default setup, hence these names.
 conn = psycopg2.connect(
     dbname="postgres", 
     user="postgres", 
@@ -86,6 +89,7 @@ class QuizApp:
 
         self.main_menu()
 
+    # Main menu of the tkinter GUI
     def main_menu(self):
         """Displays the main menu options."""
         self.clear_screen()
