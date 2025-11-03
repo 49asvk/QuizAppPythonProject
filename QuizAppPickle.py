@@ -7,6 +7,7 @@ import random
 import pickle
 import os
 
+print("Hello")
 
 class Question:
     def __init__(self, question_text, choices, correct_choice):
